@@ -1,0 +1,20 @@
+[
+  {
+    "chunk_type": "merged_block",
+    "hierarchical_name": "sample_funcs.merged_L0_L15",
+    "start_line": 0,
+    "end_line": 15
+  },
+  {
+    "chunk_type": "function_declaration",
+    "hierarchical_name": "sample_funcs.combineTroops",
+    "start_line": 16,
+    "end_line": 27
+  },
+  {
+    "chunk_type": "merged_block",
+    "hierarchical_name": "sample_funcs.merged_L29_L35",
+    "start_line": 29,
+    "end_line": 35
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "chunk_type": "merged_block",
+    "hierarchical_name": "sample_module.merged_L0_L8",
+    "start_line": 0,
+    "end_line": 8
+  },
+  {
+    "chunk_type": "class_declaration",
+    "hierarchical_name": "sample_module.Cache",
+    "start_line": 9,
+    "end_line": 34
+  },
+  {
+    "chunk_type": "function_declaration",
+    "hierarchical_name": "sample_module.loadConfig",
+    "start_line": 36,
+    "end_line": 47
+  },
+  {
+    "chunk_type": "merged_block",
+    "hierarchical_name": "sample_module.merged_L49_L51",
+    "start_line": 49,
+    "end_line": 51
+  }
+]

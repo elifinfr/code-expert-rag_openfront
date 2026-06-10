@@ -1,0 +1,26 @@
+[
+  {
+    "chunk_type": "merged_block",
+    "hierarchical_name": "sample_class.merged_L0_L6",
+    "start_line": 0,
+    "end_line": 6
+  },
+  {
+    "chunk_type": "merged_block",
+    "hierarchical_name": "sample_class.BattleEngine.merged_L8_L18",
+    "start_line": 8,
+    "end_line": 18
+  },
+  {
+    "chunk_type": "method_definition",
+    "hierarchical_name": "sample_class.BattleEngine.runRound",
+    "start_line": 19,
+    "end_line": 31
+  },
+  {
+    "chunk_type": "merged_block",
+    "hierarchical_name": "sample_class.BattleEngine.merged_L33_L64",
+    "start_line": 33,
+    "end_line": 64
+  }
+]

@@ -1,0 +1,27 @@
+# Image des indexeurs SCIP (Sprint 2, Phase 0 - Lot D).
+#
+# Runtime Linux unique pour produire des index SCIP, quel que soit le langage.
+# Phase 0 : scip-typescript (TS/JS). Extensible plus tard : scip-python (Pyright),
+# scip-clang, etc. — d'ou le nom generique "indexers".
+#
+# Build :
+#   docker build -f src/graph_builder/Dockerfile.indexers -t code-expert-indexers:latest .
+#
+# Usage (via src/graph_builder/scip_runner.py) :
+#   docker run --rm -v <PROJ>:/work -v <OUT>:/out -w /work \
+#       code-expert-indexers:latest index --output /out/index.scip --infer-tsconfig
+#
+# Note : pas d'ENTRYPOINT fige -> on passe l'outil voulu en 1er argument
+# (scip-typescript / scip-python / ...) pour rester multi-langage.
+
+FROM node:20-slim
+
+# --- Indexeur TypeScript/JavaScript : scip-typescript ---
+# Pin de version pour la reproductibilite (maillon stable).
+RUN npm install -g @sourcegraph/scip-typescript@0.3.15 \
+    && npm cache clean --force
+
+WORKDIR /work
+
+# Defaut : afficher l'aide de scip-typescript si lance sans argument.
+CMD ["scip-typescript", "--help"]
